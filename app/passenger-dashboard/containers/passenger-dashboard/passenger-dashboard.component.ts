@@ -10,6 +10,8 @@ import { Passenger } from "../../models/passenger.interface";
       <passenger-detail
         *ngFor="let passenger of passengers"
         [detail]="passenger"
+        (edit)="handleEdit($event)"
+        (remove)="handleRemove($event)"
       >
       </passenger-detail>
     </div>
@@ -19,8 +21,6 @@ export class PassengerDashboardComponent implements OnInit {
   passengers: Passenger[];
   constructor() {}
   ngOnInit() {
-    console.log("ngOnInit");
-
     this.passengers = [
       {
         id: 1,
@@ -58,5 +58,13 @@ export class PassengerDashboardComponent implements OnInit {
         children: null
       }
     ];
+  }
+
+  handleEdit(event: Event) {
+    console.log(event);
+  }
+
+  handleRemove(event: Event) {
+    console.log(event);
   }
 }
