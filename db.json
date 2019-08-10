@@ -1,46 +1,32 @@
 {
   "passengers": [
     {
-      "id": 2,
+      "id": 1,
       "fullname": "Rose",
       "checkedIn": false,
       "checkInDate": null,
-      "children": [
-        {
-          "name": "Ted",
-          "age": 12
-        },
-        {
-          "name": "Chloe",
-          "age": 7
-        }
-      ]
+      "baggage": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "fullname": "James",
       "checkedIn": true,
       "checkInDate": 1491606000000,
-      "children": null
+      "baggage": ""
     },
     {
-      "id": 4,
+      "id": 3,
       "fullname": "Louise",
       "checkedIn": true,
       "checkInDate": 1488412800000,
-      "children": [
-        {
-          "name": "Jessica",
-          "age": 1
-        }
-      ]
+      "baggage": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "fullname": "Tina",
       "checkedIn": false,
       "checkInDate": null,
-      "children": null
+      "baggage": ""
     }
   ]
 }
